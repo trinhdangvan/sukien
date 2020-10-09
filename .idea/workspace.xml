@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e117ceda-1db0-4a45-93bf-a396a2f53493" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tinhchicannag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lapmaytinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tinhngaythang.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +69,8 @@
       <workItem from="1602165325367" duration="324000" />
       <workItem from="1602204150938" duration="1808000" />
       <workItem from="1602205999730" duration="684000" />
-      <workItem from="1602206739054" duration="302000" />
+      <workItem from="1602206739054" duration="1766000" />
+      <workItem from="1602209974233" duration="10816000" />
     </task>
     <servers />
   </component>
@@ -88,9 +90,17 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602216990520">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1602216990520" />
     <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1602205932243">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602205932243" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1602213751802">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1602213751802" />
   </component>
 </project>

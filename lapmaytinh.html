@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<body lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <style>
+        input{
+            width: 100%;
+        }
+    </style>
+<form>
+    <table>
+    <tr>
+      <tr><td colspan="4"> <input type="text" id="output"></td></tr>
+        <br>
+      <tr>
+        <td><input type="button" value="1" onclick="setoutput(1)"> </td>
+        <td><input type="button" value="2" onclick="setoutput(2)"> </td>
+        <td><input type="button" value="3" onclick="setoutput(3)"> </td>
+        <td><input type="button" value="+" onclick="setoutput('+')"> </td>
+       </tr>
+        <br>
+<tr>
+        <td><input type="button" value="4" onclick="setoutput(4)"> </td>
+        <td><input type="button" value="5" onclick="setoutput(5)"> </td>
+        <td><input type="button" value="6" onclick="setoutput(6)"> </td>
+        <td><input type="button" value="-" onclick="setoutput('-')"> </td>
+    </tr>
+        <br>
+<tr>
+        <td><input type="button" value="7" onclick="setoutput(7)"> </td>
+        <td><input type="button" value="8" onclick="setoutput(8)"> </td>
+        <td><input type="button" value="9" onclick="setoutput(9)"> </td>
+        <td><input type="button" value="*" onclick="setoutput('*')"> </td>
+</tr>
+        <br>
+<tr>
+         <td> <input type="button" value="C" onclick="reset( )"> </td>
+         <td> <input type="button" value="0" onclick="setoutput(0)"> </td>
+         <td> <input type="button" value="=" onclick="calculator('=')"> </td>
+         <td> <input type="button" value="/" onclick="setoutput('/')"> </td>
+</tr>
+    </table>
+        </form>
+
+
+
+    <script>
+        function  setoutput(value){
+            document.getElementById('output').value +=value;
+        }
+        function  calculator(value){
+            let output=document.getElementById('output').value;
+            result=eval(output);
+            document.getElementById('output').value=result;
+        }
+        function  reset( ){
+            document.getElementById('output').value ="";
+        }
+    </script>
+</body>
+</html>
