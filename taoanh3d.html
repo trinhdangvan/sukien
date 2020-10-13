@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        img {
+            width: 500px;
+        }
+    </style>
+</head>
+<body >
+    <table id="content">
+       <tr>
+           <td> <img data-name="hay" src="img/hayx1.PNG" alt="1" id="img1" onclick="changesrcImg(this.id, 1)"> </td>
+           
+       </tr>
+        <tr>
+            <td><img data-name="ho"  src="img/hox2.PNG"  id="img2" onclick="changesrcImg(this.id, 2)"> </td>
+
+        </tr>
+        <tr>
+            <td><img data-name="he" src="img/xex3.PNG" id="img3" onclick="changesrcImg(this.id, 3)"></td>
+        </tr>
+    </table>
+</body>
+</html>
+<script>
+        function changesrcImg(idImage, pos) {
+            let img = document.getElementById(idImage);
+            let dataName =img.getAttribute("data-name");
+           let number = +img.alt;
+           number<3?number++:number=1;
+                switch (number) {
+                  case 1:
+                      img.setAttribute("data-name",'hay');
+                      break;
+                  case 2:
+                      img.setAttribute("data-name",'ho')
+                  case 3:
+                      img.setAttribute("data-name",'xe')
+                  default:
+                      img.setAttribute("data-name",'hay');
+            }
+
+        }
+
+      img.src ='img/'+dataName+'x'+pos+'.PNG';
+        img.alt =number;
+        function checkWin() {
+            let dataNameImg1 = document.getElementById('img1').getAttribute("data-name");
+            let dataNameImg2 = document.getElementById('img2').getAttribute("data-name");
+            let dataNameImg3 = document.getElementById('img3').getAttribute("data-name");
+
+            if (dataNameImg1 === dataNameImg2 && dataNameImg2 === dataNameImg3) {
+                document.getElementById('content').style.border = '2px solid red';
+            } else {
+                document.getElementById('content').style.border = '2px solid white';
+            }
+        }
+    </script>
